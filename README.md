@@ -233,12 +233,14 @@ Contributions are welcome! If you find a bug or want to suggest an improvement:
 
 ## 📜 License
 
-This project is open source. The Constitution of Nepal is a public document.
+This project is open source. The Constitution of Nepal is a public document. This project is intended for educational and research purposes.
 
 ---
 
 ## 👤 Author
 
-**Utkrista** — [GitHub](https://github.com/Utkrista123)
+**Utkrista Shrestha
+
+Computer Science Student | AI & Software Engineering Enthusiasta** — [GitHub](https://github.com/Utkrista123)
 
 > *This is Phase 1 of a larger Nepal Legal AI project. The goal is to make Nepal's legal documents accessible and understandable to everyone.*
