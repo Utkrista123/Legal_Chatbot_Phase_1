@@ -134,7 +134,7 @@ if collection is None:
 ollama_ready, ollama_error = check_ollama_ready(LLM_MODEL)
 if not ollama_ready:
     st.error(ollama_error)
-    st.stop
+    st.stop()
 
 st.success(f"Ready - {collection.count()} articles loaded.")
 st.divider()
@@ -150,7 +150,7 @@ for msg in st.session_state.rag_messages:
         if "articles" in msg:
             with st.expander(f"View {len(msg['articles'])} retrieved articles"):
                 for a in msg["articles"]:
-                    st.markdown(f"**Article {a['article_number']}** ({a["relevance"]}% relevant)")
+                    st.markdown(f"**Article {a['article_number']}** ({a['relevance']}% relevant)")
                     st.markdown(a["text"])
                     st.divider()
 
@@ -171,7 +171,7 @@ if user_query:
             if not articles:
                 answer = "I couldn't find any relevant article for this question."
                 st.markdown(answer)
-                st.session_state.rag_message.append({"role": "assistnat", "content": answer})
+                st.session_state.rag_messages.append({"role": "assistant", "content": answer})
             else:
                 system_prompt, user_prompt = building_rag_prompt(user_query, articles)
 
@@ -185,7 +185,7 @@ if user_query:
 
         with st.expander(f"View {len(articles)} retrieved articles used for this answer."):
             for a in articles:
-                st.markdown(f"**Article {a['article_number']}** ({a["relevance"]}% relevant)")
+                st.markdown(f"**Article {a['article_number']}** ({a['relevance']}% relevant)")
                 st.markdown(a["text"])
                 st.divider()
 
