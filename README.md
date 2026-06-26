@@ -228,7 +228,7 @@ This project is open source. The Constitution of Nepal is a public document. Thi
 
 ## 👤 Author
 
-**Utkrista Shrestha**
+**Utkrista Thapa Shrestha**
 
 **Computer Science Student | AI & Software Engineering Enthusiast** — [GitHub](https://github.com/Utkrista123)
 
