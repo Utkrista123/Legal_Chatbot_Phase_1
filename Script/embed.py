@@ -4,9 +4,9 @@ import os
 import chromadb
 from sentence_transformers import SentenceTransformer
 
-ARTICLES_PATH = "./json/articles.json"
+ARTICLES_PATH = "../json/articles.json"
 
-CHROMA_DB_PATH = "./chroma_db"
+CHROMA_DB_PATH = "../chroma_db"
 
 COLLECTION_NAME = "nepal_constitution"
 
