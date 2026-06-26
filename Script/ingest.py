@@ -2,9 +2,9 @@ import re
 import json
 import fitz
 
-PDF_PATH = "constitution_nepal_2015.pdf"
+PDF_PATH = "./data/constitution_nepal_2015.pdf"
 
-OUTPUT_PATH = "articles.json"
+OUTPUT_PATH = "./json/articles.json"
 
 def extract_text_from_pdf(pdf_path):
     doc = fitz.open(pdf_path)

@@ -2,3 +2,4 @@ sentence-transformers
 chromadb
 streamlit
 ollama
+pymupdf
